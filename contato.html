@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<img id="logo" src="download.png">
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="quartos.html">Quartos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <main>
+        <form method="post" action="" enctype="multipart/form-data">
+            <p class="titulo-form"> Contato</p>
+            <div class="form-div">
+                <label class="label-control">Nome</label>
+                <input type="text" name="nome" id="nome" placeholder="Insira seu nome" class="input-control">
+            </div>                
+            <div class="form-div">
+                <label class="label-control">Email</label>
+                <input type="email" name="email" id="email" placeholder="Insira seu Email" class="input-control">
+            </div>
+            <div class="form-div">
+                <label class="label-control">Fone</label>
+                <input type="fone" name="fone" id="fone" placeholder="Insira seu fone" class="input-control">
+            </div>
+            <div class="form-div">
+                <label class="label-control">Sugestão</label>
+                <textarea rows="5" cols="50" name="sobre" id="sobre" placeholder="Coloque a sua duvida ou sugestão aqui" class="text-control"></textarea> 
+            </div>
+            <div class="form-div">
+                <input type="submit" name="envia" value="Enviar" class="button">
+            </div>
+        
+        </form>
+    </main>
+
+    <footer>
+        <img>
+        <p class="copyright">&copy;Copyright Salesiano Hotel - 2022</p>
+    </footer>
+</body>
+</html>
