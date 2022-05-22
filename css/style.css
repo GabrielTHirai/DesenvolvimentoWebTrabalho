@@ -1,9 +1,9 @@
 body{
-    background: #f8f8f8 ;
+    background: var(--branco-menos-branco) ;
 }
 
 header{
-    background: #B61111;
+    background: var(--header-footer);
     padding: 30px 15px;
 }
 
@@ -34,7 +34,7 @@ nav a{
 }
 
 nav a:hover{
-    color: black;
+    color: var(--black);
     transition: .5s; 
 }
 
@@ -57,15 +57,15 @@ nav a:hover{
 }
 
 .essencia{
-    background-color: #FFF;
-    border: 3px solid #000000; 
+    background-color: var(--branco);
+    border: 3px solid var(--black); 
     margin: 0 0 15px 0;
 }
 
 
 .sobrenos{
-    background: #fff;
-    border: 3px solid #000000;
+    background: var(--branco);
+    border: 3px solid var(--black); 
     margin: 30px 0 0 0;
 }
 
@@ -90,17 +90,17 @@ nav a:hover{
     margin: 20px 50px;
     padding: 30px 10px 40px 10px;
     box-sizing: border-box;
-    border: 4px solid #000000;
+    border: 4px solid var(--black);
     border-radius: 10px;
 }
 
 .quartosuite li:hover{
-    border-color: darkgray;
+    border-color: #a9a9a9;
     transition: .2s;
 }
 
 .quartosuite li:active{
-    border-color:gray;
+    border-color:#808080;
 }
 
 .quartosuite li:hover h2{
@@ -128,14 +128,13 @@ section div iframe{
 }
 
 footer{
-    padding: 2rem 0;
-    background: #B61111;
+    padding: 2rem 0 2rem;
+    background: var(--header-footer);
     clear: both;
-    margin: 2rem 0 0 0;
 }
 
 .copyright{
-    color: white;
+    color: var(--branco);
     text-align: center;
     font-weight: bold;
     font-size:18px;
@@ -164,20 +163,20 @@ form{
 }
 
 .input-control, .text-control{
-    border: 1px solid black;
+    border: 1px solid var(--black);
     border-radius: 30px;
     padding: 10px 5px;
     margin:5px 0;
     width: 100%;
     box-shadow: 3px 3px #CCC;
     font: 1rem Verdana;
-    color: #F00;
+    color: var(--red);
 }
 
 .button{
-    border: 1px solid #000;
-    background: #f00;
-    color:#FFF;
+    border: 1px solid var(--black);
+    background: var(--red);
+    color:var(--branco);
     font-weight: bold;
     font-size: 1rem;
     padding: 10px 5px;
@@ -188,11 +187,15 @@ form{
 }
 
 .button:hover{
-    color: #000;
+    color: var(--black);
     transition: 0.5s;
 }
 
 /*///////////////////////////////Quartos//////////////////////////////////*/
+
+.mainQuartos{
+    background: var(--quase-preto);
+}
 
 .mainQuartos ul li{
     display: inline-table;
@@ -200,15 +203,16 @@ form{
     width: 30%;
     vertical-align: top;
     box-sizing: border-box;
-    border: 2px solid gray;
+    border: 2px solid var(--dark-gray);
     margin: 5rem 2rem;
     padding: 2rem 3rem;
     margin-left: 10rem;
+    background-color: var(--very-dark-gray);
 }
 
 .mainQuartos li:hover{
     transition: .4s;
-    border-color: #000;
+    border-color: var(--branco-menos-branco-2);
 }
 
 
@@ -216,10 +220,12 @@ form{
     font-size: 40px;
     font-weight: bold;
     padding: 20px 0;
+    color: var(--branco);
 }
 .mainQuartos ul li p{
     padding: 20px 2rem;
     text-align: center;
+    color: var(--branco);
     font-family: 'Times New Roman', Times, sans-serif;
     font-size: 1.5em;
     margin: 1rem 0;
@@ -231,81 +237,153 @@ form{
 .botaoQuartos{
     text-decoration: none;
     font-size: 1.2rem;
-    color: #fff;
-    border: .1em solid #000;
+    color: var(--branco);
+    border: .1em solid var(--black);
     padding: .6rem ;
     margin: 2rem 0;
-    background-color: #B61111;
+    background-color: var(--header-footer);
 }
 
 .botaoQuartos:hover{
     font-size: 1.5rem;
 }
 
-/* LISTA QUARTOS */
-
-.mainQuartosp2 ul li {
-    display: list-item;
-    border: 2px solid #000;
-}
-
-.mainQuartosp2 ul li h2{
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    margin: 20px;
-}
-
-.listaQuartos{
-    width: 40%;
-    margin-left: 30%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.mainQuartosp2 ul li p{
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 10px ;
-    text-align: center;
-}
-
 /*suites*/
 .mainSuites{
-    background-color: #f8f8f8;
+    background-color: var(--quase-preto);
+    padding: 1rem;
 }
 
 
 .mainSuites h1{
     text-align: center;
     font-size: 3rem;
+    color: var(--branco);
+    padding: 1.5rem;
     font-weight: bold;
-    margin: 1.2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
-.mainSuites ul{
+.mainSuites section{
     display: inline-table;
-    margin-top: 5rem;
 }
-.mainSuites ul li h2{
+.mainSuites section h2{
     font-size: 1.7rem;
     text-align: center;
+    color: var(--branco);
     margin: 1rem;
+    clear: left;
 }
 
 .listaSuites{
-    width: 30%;
-    margin: 1.6rem 0 1.6rem 32.5rem;
+    width: 40% ;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.botaoSuites{
+.botaoQuarto, .botaoSuites{
     text-decoration: none;
-    color: #FFF;
-    border: .2rem solid #000;
+    font-size: 1.2rem;
+    color: var(--branco-menos-branco-2);
+    padding: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*suite luxo*/
+
+.mainSuitesLuxo{
+    background-color: var(--quase-preto);
+}
+
+.mainSuitesLuxo section img{
+    width: 40%;
+    height: 20rem;
+    display: inline-block;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+.mainSuitesLuxo section h1{
+    font-weight: bold;
+    font-size: 2rem;
     text-align: center;
-    margin: 1rem 0 1rem 43.5rem;
-    background-color: #B61111;
-    padding: .4rem ;
+    padding: 1rem;
+    color: var(--branco);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.mainSuitesLuxo section p{
+    font-size: 1.3rem;
+    padding: 2rem 5rem 1.5rem;
+    color:var(--branco);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*QUARTOS*/
+
+.mainQuartosp2{
+    background: var(--quase-preto);
+}
+
+.mainQuartosp2 h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--branco);
+    padding: 1rem 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mainQuartosp2 section{
+    padding: 2rem 0;
+}
+
+.mainQuartosp2 section h2{
+    text-align: center;
+    color:var(--branco);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1.5rem 0;
+}
+
+.listaQuartos{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+/*Quarto*/
+
+.mainQuarto{
+    background: var(--quase-preto);
+    color: var(--branco);
+}
+
+.mainQuarto section h1{
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding: 2rem 0;
+}
+
+.mainQuarto section img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+}
+
+.mainQuarto section p {
+    font-size: 1.5rem;
+    padding: 1rem 4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

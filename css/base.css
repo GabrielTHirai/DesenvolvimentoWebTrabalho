@@ -1,0 +1,26 @@
+:root{
+    --branco-menos-branco:#f8f8f8;
+    --header-footer:#B61111;
+    --black:#000;
+    --branco:#FFF;
+    --dark-gray:#a9a9a9;
+    --gray:#808080;
+    --box-shadow:#CCC;
+    --red: #F00;
+    --branco-menos-branco-2:#E7E3E3;
+    --bsuites:#FB3E3E;
+    --quase-preto:#0c0c0c;
+    --very-dark-gray:#525252;
+}
+
+.botao{
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width: 350px;
+
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border: 1px solid var(--branco);/*var serve para chamar a variavel que foi criada anteriormente*/
+    border-radius: 5px;
+}
