@@ -8,14 +8,14 @@ header{
 }
 
 #logo{
-    width: 15%;
+    width: 10%;
     margin: 0;
     margin-left: 20px;
 }
 
 nav{
     position: absolute;
-    top: 110px;
+    top: 5rem;
     right: 0;
 }
 
@@ -26,6 +26,7 @@ nav li{
 
 nav a{
     font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
@@ -46,7 +47,9 @@ nav a:hover{
 }
 
 .txt{
-    padding: 0 20rem;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem 2rem;
 }
 
 .titulo{
@@ -54,12 +57,14 @@ nav a:hover{
     font-size:30px;
     padding: 30px 0;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .essencia{
     background-color: var(--branco);
     border: 3px solid var(--black); 
     margin: 0 0 15px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -67,19 +72,23 @@ nav a:hover{
     background: var(--branco);
     border: 3px solid var(--black); 
     margin: 30px 0 0 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .textos{
     font-size: 22px;
     text-align: center;
     padding: 15px;
+    line-height: 2rem;
 }
 
 
 
 .quartosuite{
-    width: 940px;
-    margin: 1em 22rem;
+    width: 58.75rem;
+    display: block;
+    margin: 0 auto;
+
 }
 
 .quartosuite li{
@@ -197,6 +206,11 @@ form{
     background: var(--quase-preto);
 }
 
+.mainQuartos ul{
+    display: flex;
+    justify-content: center;
+}
+
 .mainQuartos ul li{
     display: inline-table;
     text-align: center;
@@ -245,7 +259,7 @@ form{
 }
 
 .botaoQuartos:hover{
-    font-size: 1.5rem;
+    background-color: var(--quase-preto);
 }
 
 /*suites*/
@@ -299,12 +313,10 @@ form{
     background-color: var(--quase-preto);
 }
 
-.mainSuitesLuxo section img{
+.mainSuitesLuxo  img{
     width: 40%;
-    height: 20rem;
+    height: 30rem;
     display: inline-block;
-    padding-left: 5rem;
-    padding-top: 1rem;
 }
 
 .mainSuitesLuxo section h1{
@@ -386,4 +398,266 @@ form{
     font-size: 1.5rem;
     padding: 1rem 4rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slider{
+    margin: 0 auto;
+    width: 50rem;
+    height: 25rem;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 25rem;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 50rem;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid var(--branco);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: var(--branco);
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio21:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio22:checked ~ .first{
+    margin-left: -25%;
+}
+#radio23:checked ~ .first{
+    margin-left: -50%;
+}
+#radio24:checked ~ .first{
+    margin-left: -75%;
+}
+
+#radio31:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio32:checked ~ .first{
+    margin-left: -25%;
+}
+#radio33:checked ~ .first{
+    margin-left: -50%;
+}
+
+.navigation-auto div{
+    border: 2px solid var(--blue);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 50rem;
+    margin-top:360px ;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: var(--branco);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: var(--branco);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: var(--branco);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: var(--branco);
+}
+
+
+#radio21:checked ~ .navigation-auto .auto-btn21{
+    background-color: var(--branco);
+}
+#radio22:checked ~ .navigation-auto .auto-btn22{
+    background-color: var(--branco);
+}
+#radio23:checked ~ .navigation-auto .auto-btn23{
+    background-color: var(--branco);
+}
+#radio24:checked ~ .navigation-auto .auto-btn24{
+    background-color: var(--branco);
+}
+
+
+#radio31:checked ~ .navigation-auto .auto-btn31{
+    background-color: var(--branco);
+}
+#radio32:checked ~ .navigation-auto .auto-btn32{
+    background-color: var(--branco);
+}
+#radio33:checked ~ .navigation-auto .auto-btn33{
+    background-color: var(--branco);
+}
+
+@media screen and (max-width: 800px){
+    #logo{
+        width: 0;
+        height: 0;
+    }
+
+    header nav{
+        position: relative;
+        top: 0;
+    }
+
+    header nav li{
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 .3rem;
+
+    }
+    
+    header nav li a{
+        margin: 0;
+        display:flex;
+        padding: .5rem;
+    }
+    header nav li a:hover{
+        color:var(--branco);
+    }
+    #imagemhotel{
+        width: 100%;
+        height: auto;
+    }
+    .txt{
+        padding: 0;
+    }
+
+    .textos{
+        padding: 1rem .5rem;
+    }
+    .quartosuite{
+        width: 40rem;
+        height: auto;
+        padding:0;
+        margin: 0;
+    }
+    .quartosuite li{
+        display: none;
+    }
+    .quartosuite li img{
+        width: 0;
+        height: 0;
+    }
+    .localizacao h3{
+        padding: 1rem;
+    }
+
+    section div iframe{
+        margin: 0;
+    }
+
+    .form-div{
+        width: 10rem;
+    }
+
+    .mainQuartos ul{
+        display: block;
+    }
+
+    .mainQuartos ul li{
+        display: table-cell;
+    }
+
+    .imagemQuartos{
+        display: none;
+    }
+    
+    .slider{
+        width: 20rem;
+        height: 15rem;
+    }
+    .manual-navigation{
+        width: 15rem;
+        margin-top: -220px;
+    }
+
+    .navigation-auto {
+        width: 15rem;
+        margin-top: 180px;
+    }
+    .slide img{
+        width: 100%;
+    }
+
+    .listaSuites{
+        width: 100%;
+    }
+
+    .mainSuitesLuxo img{
+        width: 100%;
+        height: auto;
+    }
+
+    .mainSuitesLuxo section p{
+        padding: 2rem .5rem;
+    }
+
+    .mainQuarto section p{
+        padding: 1rem .5rem;
+    }
+
+    .mainQuarto section img{
+        width: 95%;
+        padding: 0;
+    }
 }
