@@ -1,0 +1,31 @@
+<html>
+<head>
+<link rel="stylesheet" href="./css/login.css">	
+</head>
+<body>
+<meta charset='UTF-8'>	
+<div id="geral">
+<center>
+	<h1>Login</h1>
+	<h5>cpf=123  senha=1  (default)</h5>
+	<form action="/src/loginquarto.php" method="post">
+	  <input name="cpf" type="number" 
+	         placeholder="digite o cpf"><br>
+	  <input name="senha"  type="password"
+	         placeholder="digite a senha"><br><br>
+      <input name="token" type="hidden" 
+                         value="meutoken">
+
+	  <input name="botaoEnviar" type="submit" 
+		    value="Enviar">
+
+    </form>
+    <br>
+    <a href="/html/cadUsuario.html">Não tem cadastro ainda? Clique aqui.</a><br><br>
+    <div class="mensagem"> <!--mensagem--> </div>
+
+</center>
+
+</div>
+</body>
+</html>

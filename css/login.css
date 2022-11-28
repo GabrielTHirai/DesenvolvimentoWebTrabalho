@@ -1,0 +1,15 @@
+body {
+  width: 100%;
+}
+body .mensagem {
+  color: red;
+  font-size: large;
+}
+body .total {
+  width: 100%;
+}
+
+form {
+  width: 40%;
+  margin: 0 auto;
+}/*# sourceMappingURL=login.css.map */

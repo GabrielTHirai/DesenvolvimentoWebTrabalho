@@ -13,26 +13,6 @@ header{
     margin-left: 20px;
 }
 
-nav{
-    position: absolute;
-    top: 5rem;
-    right: 0;
-}
-
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-nav a{
-    font-size: 25px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-right: 60px;
-}
 
 nav a:hover{
     color: var(--black);
@@ -118,6 +98,7 @@ nav a:hover{
 
 .quartosuite li p{
     padding: 10px;
+    margin-bottom: 2rem;
     font-size: 22px;
 }
 
@@ -546,6 +527,14 @@ form{
 }
 #radio33:checked ~ .navigation-auto .auto-btn33{
     background-color: var(--branco);
+}
+
+.link__quartosuite{
+    border: 3px solid var(--black);
+    background-color: var(--red);
+    padding: .5rem; 
+    color: var(--branco);
+    text-decoration: none;
 }
 
 @media screen and (max-width: 800px){
