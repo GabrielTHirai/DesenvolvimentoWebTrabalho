@@ -34,6 +34,7 @@
                 <h1 class="titulo">Quem Somos</h1>
                 <p class="textos">
                     215768 - Gabriel Toshiaki Hirai Takematu.
+                    216026 - Felipe Augusto Bernal Anastácio
                 </p>
             </div>
         </div>
@@ -54,6 +55,39 @@
                 </li>
             </ul>
         </div>
+
+        <div class="api">
+            <center>
+                <h1>Consultar CEP</h1>
+                <form class="form-horizontal"
+                action="index.php" method="post">
+                <fieldset>
+
+                <!-- Form Name -->
+                <legend>CEP</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Digite o CEP:</label>  
+                <div class="col-md-4">
+                <input id="textinput" name="cep" type="number" placeholder="só aceita numeros" class="form-control input-md" required="">
+                    
+                </div>
+                </div>
+
+                <!-- Button -->
+                <div class="form-group">
+                <div class="col-md-2">
+                    <br><button id="bPesquisar" name="bPesquisar" class="btn btn-success" type="submit">
+                    Buscar Dados</button>
+                </div>
+                </div>
+
+                </fieldset>
+                </form>
+            </center>
+        </div>
+
         <section class="localizacao">
             <h3>Nosso estabelecimento</h3>
             
